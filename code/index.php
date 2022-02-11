@@ -112,3 +112,47 @@ function printStringReturnNumber()
     return 44;
 }
 echo "<br>" . $my_num = printStringReturnNumber();
+
+//16
+function increaseEnthusiasm($s = "null")
+{
+    return $s . "!";
+}
+echo "<br>" . increaseEnthusiasm("NUTELLA");
+
+function repeatThreeTimes($s = "null")
+{
+    return $s . $s . $s;
+}
+echo "<br>" . repeatThreeTimes("POTATO");
+echo "<br>" . increaseEnthusiasm(repeatThreeTimes("BANANA"));
+
+function cut($s = "null", $length = 10)
+{
+    return substr($s,0,$length);
+}
+
+$array = [4,-2,5,19,-130,0,10];
+function sequence($array, $k)
+{
+    if($k >= count($array)) return;
+
+    echo $array[$k];
+    sequence($array, ++$k);
+}
+echo sequence($array,0);
+
+$num=321; 
+function SUM_OF_DIGITS($num,$sum=0)
+{
+    while ($num > 0)
+    {
+        $sum+=$num%10;
+        $num/=10;
+    }
+    echo "$sum ";
+    if ($sum>9)
+        SUM_OF_DIGITS($sum);
+    else return;
+}
+echo SUM_OF_DIGITS($num);
