@@ -28,4 +28,21 @@ $days_per_language=$days/$num_languages;
 echo "<br>" . $days_per_language;
 
 //12
-echo 8**2; 
+echo 8**2;
+
+//13
+$my_num = 16;
+$answer = $my_num;
+$answer += 2;
+$answer *= 2;
+$answer -= 2;
+$answer /= 2;
+$answer -= $my_num;
+echo $answer;
+
+//14%
+$a = 10; $b=3;
+echo "<br>" . ($a%$b);
+if ($a%$b==0)
+    echo "<br>Делится<br>";
+else echo "<br>Делится с остатком<br>" . ($a%$b); 
