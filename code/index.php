@@ -219,3 +219,34 @@ $array10 = ['a', 'b', 'c', 'd', 'e'];
 echo count($array10) . "<br>";
 echo $array10[count($array10) - 1];
 echo $array10[count($array10) - 2];
+
+//18
+function sum10(int $x, int $y): bool
+{
+    return ($x+$y > 10);
+}
+
+function equal(int $x, int $y): bool
+{
+    return ($x==$y);
+}
+
+$age = 63;
+if($age < 10 or $age > 99)
+    echo "Число не попадает в диапазон";
+else{
+    $sum = 0;
+    while ($age > 0){
+        $sum += $age % 10;
+        $age /= 10;
+    }
+    if ($sum < 10)
+        echo "Сумма цифр однозначна<br>";
+    else
+        echo "Сумма цифр двузначна<br>";
+}
+$array11 = [1, 2, 3];
+if (count($array11) == 3)
+    echo array_sum($array11);
+
+//19
