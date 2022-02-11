@@ -87,3 +87,20 @@ $array3 = [1, 2, -1, -2, 3, -3];
 foreach ($array3 as $num) {
     $num = abs($num);
 }
+
+//14general
+$num = 32;
+$divider = [];
+for ($i=1; $i <= $num; $i++) {
+    if ($num % $i == 0) {
+        array_push($divider, $i);
+    }
+}
+
+$array4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+$j=0;
+$sum=0;
+while ($sum <= 10){
+    $sum+=$array4[$j];
+    $j++;
+}
