@@ -132,15 +132,15 @@ function cut($s = "null", $length = 10)
     return substr($s,0,$length);
 }
 
-$array = [4,-2,5,19,-130,0,10];
-function sequence($array, $k)
+$array5 = [4,-2,5,19,-130,0,10];
+function sequence($array5, $k)
 {
-    if($k >= count($array)) return;
+    if($k >= count($array5)) return;
 
-    echo $array[$k];
-    sequence($array, ++$k);
+    echo $array5[$k];
+    sequence($array5, ++$k);
 }
-echo sequence($array,0);
+echo sequence($array5,0);
 
 $num=321; 
 function SUM_OF_DIGITS($num,$sum=0)
@@ -156,3 +156,44 @@ function SUM_OF_DIGITS($num,$sum=0)
     else return;
 }
 echo SUM_OF_DIGITS($num);
+
+//17
+$array6 = [];
+$count = 10;
+
+for ($i = 0; $i < $count; $i++)
+{
+    $str_counter = $i;
+    $str_counter++;
+    $temp_str = str_repeat('x', $str_counter);
+
+    array_push($array6, $temp_str);
+
+}
+
+function arrayFill($val, $count){
+    $array7 = [];
+    for($i = 1; $i <= $count; $i++){
+        array_push($array7, $val);
+        echo $array7[$i-1], " ";
+    }
+    return $array7;
+}
+arrayFill("XX", 7);
+
+$two_arr = [[1, 2, 3], [4, 5], [6]];
+$amount = 0;
+for ($i = 0; $i < count($two_arr); $i++){
+    $amount += array_sum($two_arr[$i]);
+}
+echo $amount;
+
+$array8 = array();
+for($i = 0; $i < 3; $i++){
+    $t_arr = [];
+    for($j = 0; $j < 3; $j++){
+        array_push($t_arr, $i * 3 + $j + 1);
+    }
+    array_push($array8, $t_arr);
+}
+
