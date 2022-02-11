@@ -15,7 +15,14 @@ $num2 = 2;
 echo $num2;
 $num3 = 3.123;
 echo " " . $num3;
-echo 3+9;
+echo (3+9);
 $last_month = 1187.23;
 $this_month = 1089.98;
-echo $last_month - $this_month;
+echo ($last_month - $this_month);
+
+//11
+$num_languages = 3;
+$months=11;
+$days = $months*16;
+$days_per_language=$days/$num_languages;
+echo "<br>" . $days_per_language;
