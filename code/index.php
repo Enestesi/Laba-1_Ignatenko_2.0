@@ -197,3 +197,25 @@ for($i = 0; $i < 3; $i++){
     array_push($array8, $t_arr);
 }
 
+$array9 = [2, 5, 3, 9];
+$result = $array9[0] * $array9[1] + $array9[2] * $array9[3];
+echo $result;
+
+$user = array(
+    'name' => 'Enestesi',
+    'surname' => 'Ignatusha',
+    'patronymic' => 'Mikhalna'
+);
+echo $user['surname'], " ", $user['name'], " ", $user['patronymic'];
+
+$date = array(
+    'year' => '2022',
+    'month' => 'February',
+    'day' => '22'
+);
+echo $date['year'], "-", $date['month'], "-", $date['day'];
+
+$array10 = ['a', 'b', 'c', 'd', 'e'];
+echo count($array10) . "<br>";
+echo $array10[count($array10) - 1];
+echo $array10[count($array10) - 2];
