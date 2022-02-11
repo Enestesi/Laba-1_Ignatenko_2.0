@@ -104,3 +104,11 @@ while ($sum <= 10){
     $sum+=$array4[$j];
     $j++;
 }
+
+//15
+function printStringReturnNumber()
+{
+    echo "<br>Return number";
+    return 44;
+}
+echo "<br>" . $my_num = printStringReturnNumber();
