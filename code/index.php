@@ -250,3 +250,11 @@ if (count($array11) == 3)
     echo array_sum($array11);
 
 //19
+function Pyramid(int $row)
+{
+    for ($i=1; $i <= $row; $i++)
+    {
+        echo str_repeat('x', $i), "<br>";
+    }
+}
+Pyramid(20);
