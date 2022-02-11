@@ -254,7 +254,32 @@ function Pyramid(int $row)
 {
     for ($i=1; $i <= $row; $i++)
     {
-        echo str_repeat('x', $i), "<br>";
+        echo str_repeat('x', $i) . "<br>";
     }
 }
 Pyramid(20);
+
+//20
+$array12 = [1, 2, 3, 4, 5, 6, 7];
+echo array_sum($array12)/count($array12) . "<br>";
+
+$array13 = range(1, 100, 1);
+echo array_sum($array13) . "<br>";
+
+$array14 = [1,2,3,4,5,6,7,8,9];
+
+function root(int &$num)
+{
+    $num = sqrt($num);
+}
+
+$sqrtArray = $array14;
+array_walk($sqrtArr, "root");
+
+$keys = range('a', 'z');
+$numb = range(1, 26);
+$array15 = array_combine($keys, $numb);
+
+$str = '1234567890';
+$array16 = str_split($str, 2);
+echo "<br>" . array_sum($array16);
