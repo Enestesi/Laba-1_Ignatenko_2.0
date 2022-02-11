@@ -77,3 +77,13 @@ $random_arr = array();
 for ($i=0; $i < 10; $i++) {
     $random_arr[$i] = rand();
 }
+
+//14abs
+$a = 4;
+$b = 23;
+$difference = abs($a-$b);
+
+$array3 = [1, 2, -1, -2, 3, -3];
+foreach ($array3 as $num) {
+    $num = abs($num);
+}
