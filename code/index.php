@@ -9,5 +9,10 @@ $order .= "abcdf";
 echo "<br>Your order is:$very_bad_unclear_name.";
 
 //2
-$var1 = 2;
-echo $var1 . "<br>";
+$num1 = 1;
+echo $num1 . "<br>";
+$var2 = 2;
+echo $num2;
+$num3 = 3.123;
+echo " " . $num3;
+echo 3+9;
