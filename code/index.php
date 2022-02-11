@@ -65,3 +65,15 @@ $array1=[
     "floor" => floor(sqrt(587)),
     "ceil" => ceil(sqrt(587))
 ];
+
+//14min_max
+$array2 = [4,-2,5,19,-130,0,10];
+$minimum = min($array2);
+$maximum = max($array2);
+
+echo rand(1,100) . "<br>";
+
+$random_arr = array();
+for ($i=0; $i < 10; $i++) {
+    $random_arr[$i] = rand();
+}
